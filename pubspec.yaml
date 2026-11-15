@@ -1,0 +1,41 @@
+name: geogusto
+description: Scopri i prodotti enogastronomici tipici della zona in cui ti trovi.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.5.0
+  geolocator: ^12.0.0
+  image_picker: ^1.1.2
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#8B2E2E"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#8B2E2E"
+  image: assets/icon/icon_foreground.png
+  android_12:
+    color: "#8B2E2E"
+    image: assets/icon/icon_foreground.png
